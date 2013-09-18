@@ -1,1 +1,26 @@
 Hello World!
+
+is_git_repo.py
+Check
+(1) The current dir has a sub dir whose name is .git?
+(2) The current dir'name is ended with .git?
+(3) The current direcoty is contained in a dir whos name is ended with .git.
+
+For example,
+In /home/jim/workspace/abc.git
+>>> find . -maxdepth 1 -type d
+.
+./.git
+
+(1) Yes
+(2) Yes
+(3) No
+
+In /home/jim/workspace/src
+.
+./bin
+./lib
+
+(1) No
+(2) No
+(3) No
